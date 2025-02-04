@@ -52,7 +52,7 @@
 
     <header class="container mx-auto lg:overflow-x-hidden">
         <!-- This is navigation part -->
-        <div class="navbar bg-base-100 border border-b-orange-400 lg:border-none md:border-none">
+        <div class="navbar bg-base-100 border border-b-orange-400 bg-yellow-50 lg:border-none md:border-none">
             <div class="navbar-start">
                 <div class="flex justify-center">
                     <img src="./c1-assets/logo-header.png" alt="">
@@ -88,9 +88,6 @@
                     <li><a class="text-xl" href="">Contact us</a></li>
                 </ul>
             </div>
-            <!-- <div>
-                    <i class="fa-solid fa-bars"></i>
-                </div> -->
         </div>
         <!-- Banner part -->
         <div class="mx-2 m-7">
@@ -110,7 +107,7 @@
 
 
     <!-- Main section -->
-    <main class="container mx-auto lg:overflow-x-hidden mt-40 lg:mt-0">
+    <main class="container mx-auto lg:overflow-x-hidden lg:overflow-y-hidden mt-40 lg:mt-0">
         <!-- Browse my catagory part -->
         <div class="mx-2 ">
             <!-- catagory heading -->
@@ -171,6 +168,61 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Rabbit</h2>
                         <p>3 items</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pet training -->
+        <div class="mt-20 ml-2">
+            <h1 class="text-3xl adlam-display">We also train pet</h1>
+            <!-- give pet picture -->
+            <div class="mt-5 ml-3 lg:flex justify-around">
+                <div>
+                    <h3 class="text-xl mb-2">Give us your pet picture</h3>
+                    <input type="file" class="file-input file-input-bordered file-input-warning w-full max-w-xs" />
+                </div>
+                <!-- stat -->
+                <div class="lg:ml-3">
+                    <h3 class="text-xl mt-4 lg:mt-0 ">Our training plans</h3>
+                    <div class="stats bg-primary text-primary-content lg:flex lg:flex-col lg:w-60 bg-[#f9df8a] ">
+                        <div class="stat">
+                            <div class="stat-title">Basic training</div>
+                            <div class="stat-value">$40</div>
+                            <div class="stat-actions">
+                                <button class="btn btn-sm btn-success">Buy plan</button>
+                            </div>
+                        </div>
+
+                        <div class="stat">
+                            <div class="stat-title">Advance training</div>
+                            <div class="stat-value">$60</div>
+                            <div class="stat-actions">
+                                <button class="btn btn-sm btn-success">Buy plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- feedback -->
+                <div class="hidden lg:block">
+                    <div>
+                        <h1 class="text-xl mb-2">Customer feedback</h1>
+                    </div>
+                    <div class="bg-[#f9df8a] rounded-xl p-2">
+                        <div class="chat chat-start ">
+                            <div class="chat-bubble">
+                                Thanks for this nice session,<br>
+                                My pet behaves much better now.
+                            </div>
+                        </div>
+                        <div class="chat chat-end">
+                            <div class="chat-bubble">Thank you for your feedback.</div>
+                        </div>
+                        <div class="chat chat-start ">
+                            <div class="chat-bubble">
+                                I will come again to train my pet for sure.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -319,12 +371,97 @@
         </div>
 
         <!-- Everyday low price -->
-
+        <div>
+            <h1 class="adlam-display text-2xl mx-3 mt-10 lg:mt-28 lg:text-3xl ">Everyday low price</h1>
+        </div>
+        <div class="mt-4 ml-3 space-y-3 lg:gap-4 lg:space-y-0 lg:flex overflow-x-hidden lg:overflow-y-hidden">
+            <!-- purple card -->
+            <div
+                class="card card-side w-96 h-[400px] lg:w-[690px] lg:h-[480px] bg-gradient-to-r from-[#F8CCFB] to-[#937995]">
+                <div class="card-body">
+                    <div class="absolute lg:mt-16">
+                        <p class="hidden lg:block text-white text-xl">Under plus</p>
+                        <br>
+                        <h2 class="card-title adlam-display text-3xl">Pet gromming mit</h2>
+                        <br>
+                        <p class="hidden lg:block text-white text-xl">(Easy hair removal)</p>
+                        <br>
+                        <p class="text-white font-extrabold text-3xl lg:text-black">$7.99</p>
+                    </div>
+                    <div class="relative top-9 left-20 lg:left-60 lg:-top-12">
+                        <img class="w-[270px] lg:w-auto" src="./c1-assets/cute-dog-mid.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Yellow card -->
+            <div
+                class="card card-side w-96 h-[400px] lg:h-[480px] lg:w-[520px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A]">
+                <div class="card-body">
+                    <div class="absolute">
+                        <h2 class="card-title adlam-display text-3xl">T-shirt for dogs</h2>
+                        <br>
+                        <p class="text-amber-400 font-extrabold text-3xl">$7.99</p>
+                    </div>
+                    <div class="relative left-16 top-9 lg:left-36">
+                        <img class="w-[270px] lg:w-auto" src="./c1-assets/cute-pet-mid.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
-    <footer>
-
+    <footer class="mt-14 mx-1">
+        <!-- Get pawsome news -->
+        <div
+            class="container mx-auto w-[369px] h-[523px] ml-4 z-10 lg:z-10 lg:w-auto lg:flex lg:justify-center lg:ml-56 absolute ">
+            <div class="card lg:card-side bg-base-100 shadow-xl lg:w-auto ">
+                <figure>
+                    <img src="./c1-assets/cute-pet-mid.png" alt="Album" />
+                </figure>
+                <div class="card-body lg:h-14 lg:mt-20">
+                    <h1 class="card-title adlam-display text-2xl">Get Pawsome News!</h2>
+                        <br>
+                        <p>Exclusive training tips, ticks, product deals and more.</p>
+                        <br>
+                        <input type="text" placeholder="Type here" class="input w-full max-w-xs" />
+                        <br>
+                        <button class="btn btn-warning w-28 p-1">subscribe</button>
+                </div>
+            </div>
+        </div>
+        <!-- main footer -->
+        <div class="bg-yellow-300 z-0 relative top-96 lg:top-52 lg:z-0 ">
+            <div class="container mx-auto pt-96 pb-4 lg:flex lg:mt-40 justify-evenly">
+                <div>
+                    <div class="flex">
+                        <img src="./c1-assets/logo-footer.png" alt="">
+                        <h2 class="text-2xl">Browse4pets</h2>
+                    </div>
+                    <br>
+                    <p>
+                        Discover a world of treats, toys, and <br> essentials handpicked for your <br>furry friends
+                    </p>
+                </div>
+                <br>
+                <div class="mt-10">
+                    <p>Find a pet</p>
+                    <br>
+                    <p>Breeds</p>
+                    <br>
+                    <p>Contact us</p>
+                </div>
+                <div class="mt-4 ">
+                    <h2 class="text-2xl font-semibold adlam-display">Follow us</h2>
+                    <div class="flex gap-3">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
